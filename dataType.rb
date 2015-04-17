@@ -23,5 +23,11 @@ end
 =end
 hsh = colors = { "red" => 0xf00, "green" => 0x0f0, "blue" => 0x00f }
 hsh.each do |key,value|
-	puts key," is ",value,"\n"
+	print key," is ",value,"\n"
+end
+
+#范围类型
+#范围是通过设置一个开始值和一个结束值来表示。范围可使用 s..e 和 s...e 来构造，或者通过 Range.new 来构造。
+(1..5).each do |r|
+	print r," "
 end
